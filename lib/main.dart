@@ -15,9 +15,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//path:
-//sinin => login => Screen3
-// Sin in:
-// optional data include
-// login:
-// required data include
+/*
+data 1=>2 : Sinin()
+
+
+
+
+
+*/
