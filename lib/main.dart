@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Container.dart';
 import 'package:flutter_application_1/sinin.dart';
 
 import 'increment.dart';
@@ -14,13 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      // home: Sinin(),
-     home:increment(),
+    // home:increment(),
+    home: Types_Container(),
     );
   }
 }
 /*
-data 1=>2 : Sinin()
 
+data 1=>2 : Sinin()
 increment : increment(),
 
 

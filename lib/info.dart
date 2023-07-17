@@ -14,21 +14,21 @@ _______________
 5-flutter_windows_3.10.5-stable
 6-VSCode-win32-x64-1.79.2.zip
 
-
+**************************************************************************************************************
 
 stf:
 ______
 state full widget
 used when their repitation of screen
 
-
+**************************************************************************************************************
 
 stl:
 ______
 state les widget
 used when screen is shown in one time in an app
 
-
+**************************************************************************************************************
 
 data1=>2:
 __________
@@ -50,7 +50,7 @@ if u wnt to keep shifted data optional then write "@required this.$$$",   if not
 if u want that sequence don`t metter then keep parameters of constructor in curly braces
 To resive data make write text widged as "Text(widget.$$$.toString()),"
 
-
+**************************************************************************************************************
 
 Increment & decrement:
 _______________________
@@ -74,17 +74,91 @@ for decrement &
              }"
 for increment
 
-
+**************************************************************************************************************
 
 Container:
 ___________
+1-simple:
+      Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(14), color: Colors.blue),
+            ),
 
 
+2-circal without radius:
+  only use "shape"
+
+     Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color.fromARGB(255, 241, 1, 229)),
+            ),
 
 
+3-Circal with boarder:
+  only use "shape" & "boarder"
+       Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                  border: Border.all(
+                      color: Color.fromARGB(255, 160, 97, 157), width: 5),
+                  shape: BoxShape.circle,
+                  color: Color.fromARGB(255, 241, 1, 229)),
+            ),
+
+4-shadow Container:
+  use "box shadow"
+    Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.grey.shade500,
+                        offset: Offset(4.0, 4.0),
+                        blurRadius: 5.0,
+                        spreadRadius: 1.0),
+                    BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 5.0,
+                        spreadRadius: 1.0)
+                  ]),
+            ),
 
 
+5-double shadow container:
+  use "Box shadow" & color the container as well as background(scaffold)
+      Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 206, 206, 206),
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.grey.shade500,
+                        offset: Offset(4.0, 4.0),
+                        blurRadius: 5.0,
+                        spreadRadius: 1.0),
+                    BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 5.0,
+                        spreadRadius: 1.0)
+                  ]),
+            ),
 
+**************************************************************************************************************
+
+Alinment:
+_________
 
 
 */
