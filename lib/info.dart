@@ -14,7 +14,7 @@ _______________
 5-flutter_windows_3.10.5-stable
 6-VSCode-win32-x64-1.79.2.zip
 
-                                          
+
 
 stf:
 ______
@@ -52,8 +52,33 @@ To resive data make write text widged as "Text(widget.$$$.toString()),"
 
 
 
+Increment & decrement:
+_______________________
+for this declare a variable (i.e, num==2)
+make a container to show the value(i.e,"$num",)
+ make two containers wraped in "inkwel" used to show u increment and decrement
+ on the inkwel
+  make" onTap: () {
+                setState(() {
+                  if (num > 1) {
+                    num--;
+                  }
+             }"
+for decrement &
+
+ make" onTap: () {
+                setState(() {
+                  if (num > 1) {
+                    num++;
+                  }
+             }"
+for increment
+
+
+
 Container:
 ___________
+
 
 
 
