@@ -10,6 +10,21 @@ class Types_Alinment extends StatefulWidget {
 class _Types_AlinmentState extends State<Types_Alinment> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            color: Colors.black,
+            height: 100,
+            width: 600,
+            alignment: Alignment.center,
+            child: Text(
+              "bottomCenter",
+              style: TextStyle(color: Colors.white),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
