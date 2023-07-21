@@ -159,6 +159,21 @@ ___________
 
 Alinment:
 _________
+we can use the pre-define alinments such as:
+          bottomLeft, 
+          bottomRight,
+          bottomCenter
+          spaceEvenly,
+          center,
+          centerLeft, 
+          centerRight,
+          spaceEvenly,
+          topCenter, 
+          topLeft,
+          topRight, 
+          (0, 0), "using dx & dy" 
+
+**************************************************************************************************************
 
 
 */

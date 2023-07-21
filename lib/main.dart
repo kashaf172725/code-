@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Container.dart';
 import 'package:flutter_application_1/alinment.dart';
 import 'package:flutter_application_1/sinin.dart';
-
 import 'increment.dart';
 
 void main() {
@@ -15,10 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     // home: Sinin(),
-    // home:increment(),
-   // home: Types_Container(),
-   home: Types_Alinment(),
+      // home: Sinin(),
+      // home:increment(),
+      // home: Types_Container(),
+      home: Types_Alinment(),
     );
   }
 }
@@ -27,6 +26,7 @@ class MyApp extends StatelessWidget {
 data 1=>2 : Sinin()
 increment : increment(),
 container types : Types_Container(),
+alinment options : Types_Alinment()
 
 
 
