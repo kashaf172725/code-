@@ -38,7 +38,10 @@ data 1=>2 : Sinin()
 increment : increment(),
 container types : Types_Container(),
 alinment options : Types_Alinment()
-Listview : List_view()
+Listview : List_view(),
+hidden drawer : Hiddendrawer(),
+
+
 List_view_builder : List_view_builder()
 
 

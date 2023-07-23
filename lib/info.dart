@@ -1,8 +1,8 @@
 
 /*
 
-                        NOTES 
-                     _____________
+---------------------------NOTES (video mitch koko)---------------------------
+______________________________________________________________________________
 
 
 Installations:
@@ -180,6 +180,57 @@ __________
 show us list of obj
 automatic scroll
 accept children
+
+**************************************************************************************************************
+
+Hidden drawer
+______________
+
+make a folder of pages(1,2,3,......)
+make a scaffold on it
+add package on pubspec.yamal(below dependies):
+  hidden_drawer_menu : ^3.0.1
+creat a new file called a hidden drawer
+  make a stf named "Hiddendrawer"
+  and return " HiddenDrawerMenu()"
+  that requied :
+    backgroundColorMenu
+    screens: pages,
+  it also includes:
+      initPositionSelected: 0,
+      slidePercent: 60,
+      contentCornerRadius: 50,
+      withShadow: true,
+      
+  make a list as " List<ScreenHiddenDrawer> pages = [];"
+  below of it make a init state as:
+     void initState() {}
+  inside an initstate :
+     pages = [
+      ScreenHiddenDrawer(
+          ItemHiddenMenu(
+              baseStyle: myfontstyle,
+              name: "Home Screen",
+              colorLineSelected: Colors.white,
+              selectedStyle: myfontstyle),
+          HomePage()),
+
+            ScreenHiddenDrawer(
+          ItemHiddenMenu(
+              baseStyle: myfontstyle,
+              name: "Setting ",
+               colorLineSelected: Colors.white,
+              selectedStyle: myfontstyle),
+          SettingPage()),
+    ];
+    where myfontstyle is a var declared over the second overwrite as:
+      inal myfontstyle = TextStyle(
+      fontSize: 15,
+      color: Colors.white
+      );
+  now in main call "Hiddendrawer()"
+  if u want to change app bar color of all the screens then in main :
+    theme: ThemeData(primarySwatch: Colors.purple),
 
 **************************************************************************************************************
 
