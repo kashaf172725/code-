@@ -206,6 +206,7 @@ creat a new file called a hidden drawer
   below of it make a init state as:
      void initState() {}
   inside an initstate :
+
      pages = [
       ScreenHiddenDrawer(
           ItemHiddenMenu(
@@ -231,6 +232,36 @@ creat a new file called a hidden drawer
   now in main call "Hiddendrawer()"
   if u want to change app bar color of all the screens then in main :
     theme: ThemeData(primarySwatch: Colors.purple),
+
+u can also change the title of bar of every page  by writting this on hidden drawer page  :
+   leadingAppBar
+   tittleAppBar
+
+**************************************************************************************************************
+
+ClipRRect:
+__________
+
+used to round the corner of image that is not possible using container decoration
+required child as:
+
+     ClipRRect(
+            borderRadius: BorderRadius.circular(15),
+            child: Image.network(
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY6con68myXe70VXhpyrBY6xTkZtj8FAGSZkDFcjAlqA&s",
+              fit: BoxFit.fill,
+              width: 180,
+              height: 100,
+            ),
+          ),
+
+**************************************************************************************************************
+
+Switch:
+_______
+
+this is a switch button that toggal the value
+
 
 **************************************************************************************************************
 
