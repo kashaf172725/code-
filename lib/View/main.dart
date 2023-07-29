@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Container.dart';
-import 'package:flutter_application_1/alinment.dart';
 import 'package:flutter_application_1/data_tramsfer-screens/sinin.dart';
 import 'package:flutter_application_1/hiddendrawer_screens/hiden_drawer.dart';
-import 'package:flutter_application_1/swich_widget.dart';
-import 'listview_screens/ListViewBuilder.dart';
-import 'listview_screens/List_view_builder.dart';
+import '../utils/constants.dart';
 import 'clipRRect.dart';
 import 'increment.dart';
-import 'listview_screens/list_view.dart';
+
 
 void main() {
   runApp(MyApp());

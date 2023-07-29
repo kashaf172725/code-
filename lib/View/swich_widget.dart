@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'utils/constants.dart';
+import '../utils/constants.dart';
+
+
 
 class Switch_widget extends StatefulWidget {
   const Switch_widget({super.key});
