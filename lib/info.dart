@@ -83,7 +83,7 @@ ___________
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14), color: Colors.blue),
+                  borderRadius: BorderRadius.circular(14), color: MyColors.blue),
             ),
 
 
@@ -106,7 +106,7 @@ ___________
               width: 100,
               decoration: BoxDecoration(
                   border: Border.all(
-                      color: Color.fromARGB(255, 160, 97, 157), width: 5),
+                      color:MyColors.purpleboundry, width: 5),
                   shape: BoxShape.circle,
                   color: Color.fromARGB(255, 241, 1, 229)),
             ),
@@ -120,12 +120,12 @@ ___________
                   borderRadius: BorderRadius.circular(14),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.grey.shade500,
+                        color: MyColors.grey,
                         offset: Offset(4.0, 4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0),
                     BoxShadow(
-                        color: Colors.white,
+                        color: MyColors.white,
                         offset: Offset(-4.0, -4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0)
@@ -139,16 +139,16 @@ ___________
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 206, 206, 206),
+                  color: constMyColors.backgroundcolor,
                   borderRadius: BorderRadius.circular(14),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.grey.shade500,
+                        color: MyColors.grey,
                         offset: Offset(4.0, 4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0),
                     BoxShadow(
-                        color: Colors.white,
+                        color: MyColors.white,
                         offset: Offset(-4.0, -4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0)
@@ -212,7 +212,7 @@ creat a new file called a hidden drawer
           ItemHiddenMenu(
               baseStyle: myfontstyle,
               name: "Home Screen",
-              colorLineSelected: Colors.white,
+              colorLineSelected: MyColors.white,
               selectedStyle: myfontstyle),
           HomePage()),
 
@@ -220,14 +220,14 @@ creat a new file called a hidden drawer
           ItemHiddenMenu(
               baseStyle: myfontstyle,
               name: "Setting ",
-               colorLineSelected: Colors.white,
+               colorLineSelected: MyColors.white,
               selectedStyle: myfontstyle),
           SettingPage()),
     ];
     where myfontstyle is a var declared over the second overwrite as:
       inal myfontstyle = TextStyle(
       fontSize: 15,
-      color: Colors.white
+      color: MyColors.white
       );
   now in main call "Hiddendrawer()"
   if u want to change app bar color of all the screens then in main :
@@ -260,7 +260,8 @@ required child as:
 Switch:
 _______
 
-this is a switch button that toggal the value
+this is a switch button that toggal the value:
+
 
 
 **************************************************************************************************************

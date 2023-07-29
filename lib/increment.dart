@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'utils/constants.dart';
+
 class increment extends StatefulWidget {
   @override
   State<increment> createState() => _incrementState();
@@ -28,7 +30,7 @@ class _incrementState extends State<increment> {
                 height: 50,
                 width: 60,
                 decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: MyColors.green,
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(14),
                         topLeft: Radius.circular(14))),
@@ -45,7 +47,7 @@ class _incrementState extends State<increment> {
               height: 50,
               width: 100,
               decoration:
-                  BoxDecoration(color: Color.fromARGB(255, 243, 240, 240)),
+                  BoxDecoration(color: MyColors.white),
               child: Center(
                   child: Text(
                 "$num",
@@ -62,7 +64,7 @@ class _incrementState extends State<increment> {
                 height: 50,
                 width: 60,
                 decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: MyColors.green,
                     borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(14),
                         topRight: Radius.circular(14))),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/utils/constants.dart';
 
 class Types_Container extends StatefulWidget {
   const Types_Container({super.key});
@@ -11,7 +12,7 @@ class _Types_ContainerState extends State<Types_Container> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 206, 206, 206),
+      backgroundColor:MyColors.backgroundcolor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -20,23 +21,23 @@ class _Types_ContainerState extends State<Types_Container> {
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14), color: Colors.blue),
+                  borderRadius: BorderRadius.circular(14), color:MyColors.blue),
             ),
             Container(
               height: 100,
               width: 100,
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color.fromARGB(255, 241, 1, 229)),
+                  color:MyColors.purple),
             ),
             Container(
               height: 100,
               width: 100,
               decoration: BoxDecoration(
                   border: Border.all(
-                      color: Color.fromARGB(255, 160, 97, 157), width: 5),
+                      color: MyColors.purpleboundry, width: 5),
                   shape: BoxShape.circle,
-                  color: Color.fromARGB(255, 241, 1, 229)),
+                  color:MyColors.purple),
             ),
             Container(
               height: 100,
@@ -45,12 +46,12 @@ class _Types_ContainerState extends State<Types_Container> {
                   borderRadius: BorderRadius.circular(14),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.grey.shade500,
+                        color: MyColors.grey,
                         offset: Offset(4.0, 4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0),
                     BoxShadow(
-                        color: Colors.white,
+                        color: MyColors.white,
                         offset: Offset(-4.0, -4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0)
@@ -60,16 +61,16 @@ class _Types_ContainerState extends State<Types_Container> {
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 206, 206, 206),
+                  color:  MyColors.backgroundcolor,
                   borderRadius: BorderRadius.circular(14),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.grey.shade500,
+                        color: MyColors.grey,
                         offset: Offset(4.0, 4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0),
                     BoxShadow(
-                        color: Colors.white,
+                        color: MyColors.white,
                         offset: Offset(-4.0, -4.0),
                         blurRadius: 5.0,
                         spreadRadius: 1.0)

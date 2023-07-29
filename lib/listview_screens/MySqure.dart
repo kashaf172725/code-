@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/utils/constants.dart';
 
 class MySqure extends StatefulWidget {
   const MySqure({super.key});
@@ -14,7 +15,7 @@ class _MySqureState extends State<MySqure> {
           padding: EdgeInsets.all(12),
           child: Container(
             height: 200,
-            color: Colors.purple,
+            color: MyColors.purple,
           ),
         )
     ;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/hiddendrawer_screens/pages/home_page.dart';
 import 'package:flutter_application_1/hiddendrawer_screens/pages/setting.dart';
+import 'package:flutter_application_1/utils/constants.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 
 class Hiddendrawer extends StatefulWidget {
@@ -14,7 +15,7 @@ class _HiddendrawerState extends State<Hiddendrawer> {
   List<ScreenHiddenDrawer> pages = [];
 final myfontstyle = TextStyle(
   fontSize: 15,
-  color: Colors.white
+  color: MyColors.white
 );
   @override
   void initState() {
@@ -23,14 +24,14 @@ final myfontstyle = TextStyle(
           ItemHiddenMenu(
               baseStyle: myfontstyle,
               name: "Home Screen",
-              colorLineSelected: Colors.white,
+              colorLineSelected: MyColors.white,
               selectedStyle: myfontstyle),
           HomePage()),
             ScreenHiddenDrawer(
           ItemHiddenMenu(
               baseStyle: myfontstyle,
               name: "Setting ",
-               colorLineSelected: Colors.white,
+               colorLineSelected: MyColors.white,
               selectedStyle: myfontstyle),
           SettingPage()),
     ];
@@ -38,7 +39,7 @@ final myfontstyle = TextStyle(
 
   Widget build(BuildContext context) {
     return HiddenDrawerMenu(
-      backgroundColorMenu:  Color.fromARGB(255, 221, 151, 233),
+      backgroundColorMenu:  MyColors.lightpurple,
       screens: pages,
       initPositionSelected: 0,
       slidePercent: 60,

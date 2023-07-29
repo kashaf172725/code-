@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/utils/constants.dart';
 
 class Types_Alinment extends StatefulWidget {
   const Types_Alinment({super.key});
@@ -48,13 +49,13 @@ class _Types_AlinmentState extends State<Types_Alinment> {
 
 Widget alinment(var text, var text1) {
   return Container(
-    color: Color.fromARGB(255, 151, 223, 245),
+    color:MyColors.lightblue,
     height: 150,
     width: 150,
     alignment: text,
     child: Text(
       text1,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: MyColors.white),
     ),
   );
 }

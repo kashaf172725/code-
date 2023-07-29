@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'utils/constants.dart';
+
 class Switch_widget extends StatefulWidget {
   const Switch_widget({super.key});
 
@@ -16,7 +18,7 @@ class _Switch_widgetState extends State<Switch_widget> {
          child:Switch(
       // This bool value toggles the switch.
       value: light,
-      activeColor: Colors.red,
+      activeColor: MyColors.red,
       onChanged: (bool value) {
         // This is called when the user toggles the switch.
         setState(() {
