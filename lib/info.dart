@@ -269,10 +269,19 @@ this is a switch button that toggal the value:
 LIstView Builder:
 _________________
 
+Apply listviewbuilder that required :
+   itemBuilder: (context, index) {
+      return Widget();
+     }
+scroll direction can be set
+item count can br adjusted
 
+For dinamic item count:
+  make a list before build function & itemcount : name_of_list.length
 
+if more then one listviewbuilder is used then it must be wraped in container or expanded
 
-
+**************************************************************************************************************
 
 
 
