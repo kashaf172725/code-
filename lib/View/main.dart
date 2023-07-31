@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/data_tramsfer-screens/sinin.dart';
 import 'package:flutter_application_1/hiddendrawer_screens/hiden_drawer.dart';
 import '../utils/constants.dart';
+import 'Container.dart';
 import 'clipRRect.dart';
 import 'increment.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     theme: ThemeData(primarySwatch: Colors.purple),
-    
+    home : Types_Container(),
 
 
 
