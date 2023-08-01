@@ -155,6 +155,22 @@ ___________
                   ]),
             ),
 
+
+6- container with one side boarder:
+      Container(
+              margin: EdgeInsets.all(15),
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+              color: MyColors.green,
+                border: Border(
+                  right: BorderSide(
+                    color:MyColors.black,
+                  ),
+                ),
+              ),
+            ),
+
 **************************************************************************************************************
 
 Alinment:
@@ -283,6 +299,21 @@ if more then one listviewbuilder is used then it must be wraped in container or 
 
 **************************************************************************************************************
 
+TextFeild:
+__________
+
+some options for decorations are:
+     Expanded(
+            child: TextField(
+            cursorColor: Colors.black,
+              decoration: InputDecoration(
+                enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: MyColors.green)),
+                labelText: "       Enter Task name",
+                border: InputBorder.none,
+              ),
+            ),
+          ),
 
 
 

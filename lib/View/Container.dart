@@ -12,34 +12,38 @@ class _Types_ContainerState extends State<Types_Container> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:MyColors.backgroundcolor,
-      body: Center(
+      backgroundColor: MyColors.backgroundcolor,
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
+              margin: EdgeInsets.all(15),
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14), color:MyColors.blue),
+                  borderRadius: BorderRadius.circular(14),
+                  color: MyColors.blue),
             ),
             Container(
+              margin: EdgeInsets.all(15),
+              height: 100,
+              width: 100,
+              decoration:
+                  BoxDecoration(shape: BoxShape.circle, color: MyColors.purple),
+            ),
+            Container(
+              margin: EdgeInsets.all(15),
               height: 100,
               width: 100,
               decoration: BoxDecoration(
+                  border: Border.all(color: MyColors.purpleboundry, width: 5),
                   shape: BoxShape.circle,
-                  color:MyColors.purple),
+                  color: MyColors.green),
             ),
             Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                      color: MyColors.purpleboundry, width: 5),
-                  shape: BoxShape.circle,
-                  color:MyColors.purple),
-            ),
-            Container(
+              margin: EdgeInsets.all(15),
               height: 100,
               width: 100,
               decoration: BoxDecoration(
@@ -58,10 +62,11 @@ class _Types_ContainerState extends State<Types_Container> {
                   ]),
             ),
             Container(
+              margin: EdgeInsets.all(15),
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  color:  MyColors.backgroundcolor,
+                  color: MyColors.backgroundcolor,
                   borderRadius: BorderRadius.circular(14),
                   boxShadow: [
                     BoxShadow(
@@ -75,6 +80,19 @@ class _Types_ContainerState extends State<Types_Container> {
                         blurRadius: 5.0,
                         spreadRadius: 1.0)
                   ]),
+            ),
+            Container(
+              margin: EdgeInsets.all(15),
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+              color: MyColors.green,
+                border: Border(
+                  right: BorderSide(
+                    color:MyColors.black,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

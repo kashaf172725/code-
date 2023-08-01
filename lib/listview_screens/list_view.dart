@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'MySqure.dart';
+import '../Widgets.dart';
+
 
 class List_view extends StatefulWidget {
   const List_view({super.key});

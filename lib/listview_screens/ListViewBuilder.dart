@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/listview_screens/MyCircle.dart';
 
-import 'MySqure.dart';
+
+import '../Widgets.dart';
+
 
 class ListViewBuilder extends StatefulWidget {
   const ListViewBuilder({super.key});
